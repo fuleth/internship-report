@@ -5,54 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng nền tảng vững chắc về các khái niệm cơ bản của cơ sở dữ liệu và hiểu vai trò của chúng trong các ứng dụng hiện đại.
+* Tìm hiểu các dịch vụ cơ sở dữ liệu được quản lý của AWS, bao gồm Amazon RDS, Amazon Aurora, Amazon Redshift và Amazon ElastiCache.
+* Khám phá các giải pháp di chuyển cơ sở dữ liệu bằng AWS Database Migration Service (DMS) và AWS Schema Conversion Tool (SCT).
+* Tích lũy kinh nghiệm thực tế trong việc triển khai và di chuyển cơ sở dữ liệu thông qua các bài lab trên AWS.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2  | -Ôn tập các khái niệm cơ bản về cơ sở dữ liệu:<br>&emsp; + Tổng quan về cơ sở dữ liệu, vai trò và ứng dụng.<br>&emsp;+ Các thành phần cốt lõi của hệ quản trị cơ sở dữ liệu quan hệ (RDBMS).<br>&emsp;+ Tối ưu hiệu năng cơ sở dữ liệu <br>&emsp;+ Quản lý dữ liệu và giao dịch (Transaction).<br>&emsp;+ So sánh các mô hình dữ liệu.<br>&emsp;+ Phân biệt OLTP và OLAP.   | 26/05/2026 | 26/05/2026      |<https://www.youtube.com/watch?v=OOD2RwWuLRw&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=217>
+| 3  | - Tìm hiểu Amazon RDS và Amazon Aurora:<br>&emsp; + Khái niệm và mục tiêu của Amazon RDS.<br>&emsp;+ Key RDS featuresCác tính năng chính của Amazon RDS.<br>&emsp;+ Đặc điểm và sự khác biệt của Amazon Aurora. <br>&emsp;+  Các tính năng nâng cao của Amazon Aurora.    | 27/05/2026 | 27/05/2026      |<https://www.youtube.com/watch?v=qbrobQZrokY&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=218>
+| 4  | - Tìm hiểu Amazon Redshift và Amazon ElastiCache:<br>&emsp; + Amazon Redshift: Data Warehouse, kiến trúc Massively Parallel Processing (MPP), lưu trữ dạng cột (Columnar Storage) và các tính năng tối ưu chi phí.<br>&emsp;+ Amazon ElastiCache: Dịch vụ caching, hỗ trợ Redis và Memcached.<br>&emsp;+ Giới thiệu AWS Database Migration Service (DMS) và AWS Schema Conversion Tool (SCT).   | 28/05/2026 | 28/05/2026      |<https://www.youtube.com/watch?v=UvdiRW34aNI&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=219>
+| 5-6 | - Thực hiện các bài lab thực hành của Module 6::<br>&emsp; + Lab5: Introduction to Amazon Relational Database Service<br>&emsp;+ Lab43: Schema Conversion and Database Migration | 29/05/2026 | 30/05/2026      | <https://000005.awsstudygroup.com><br><https://000043.awsstudygroup.com> |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* Ôn tập và củng cố các kiến thức nền tảng về cơ sở dữ liệu, bao gồm kiến trúc cơ sở dữ liệu, các thành phần cốt lõi của RDBMS, quản lý giao dịch, tối ưu hiệu năng, mô hình dữ liệu và sự khác biệt giữa hai mô hình xử lý OLTP và OLAP.
+*Nắm vững kiến thức về Amazon RDS và Amazon Aurora, bao gồm kiến trúc, các tính năng nổi bật, khả năng sẵn sàng cao (High Availability) và các tính năng nâng cao giúp Amazon Aurora trở thành dịch vụ cơ sở dữ liệu quan hệ hiệu năng cao trên AWS.
+* Hiểu cách Amazon Redshift hỗ trợ xây dựng kho dữ liệu (Data Warehouse) quy mô lớn thông qua kiến trúc Massively Parallel Processing (MPP) và lưu trữ dạng cột (Columnar Storage), đồng thời tìm hiểu Amazon ElastiCache nhằm cải thiện hiệu năng ứng dụng bằng Redis và Memcached.
+* Tìm hiểu AWS Database Migration Service (DMS) và AWS Schema Conversion Tool (SCT), từ đó hiểu được các chiến lược di chuyển cơ sở dữ liệu và chuyển đổi lược đồ giữa các hệ quản trị cơ sở dữ liệu khác nhau.
+* Hoàn thành các bài lab thực hành về Amazon RDS và Schema Conversion & Database Migration, qua đó tích lũy kinh nghiệm thực tế trong việc triển khai cơ sở dữ liệu được quản lý và thực hiện di chuyển cơ sở dữ liệu trên nền tảng AWS.
 
